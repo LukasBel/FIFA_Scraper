@@ -5,6 +5,10 @@ defineProps({
     required: true
   }
 })
+
+const submitEmail = () => {
+  console.log('Email submitted')
+}
 </script>
 
 <template>
@@ -12,7 +16,8 @@ defineProps({
     <h3>Enter your email below</h3>
 
   <input type="email" placeholder="Email" />
-  <button>Submit</button>
+  <button @click="submitEmail">Submit</button>
+
 
   <p>By submitting your email, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
 
