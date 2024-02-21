@@ -9,6 +9,13 @@ defineProps({
 
 <template>
     <h1 class="green">{{ msg }}</h1>
+    <h3>Enter your email below</h3>
+
+  <input type="email" placeholder="Email" />
+  <button>Submit</button>
+
+  <p>By submitting your email, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+
 </template>
 
 <style scoped>
