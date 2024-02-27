@@ -1,4 +1,6 @@
 <script setup>
+import {ref} from "vue";
+
 defineProps({
   msg: {
     type: String,
@@ -7,15 +9,19 @@ defineProps({
 })
 
 const submitEmail = () => {
-  console.log('Email submitted')
+  console.log(email.value)
 }
+
+const email = ref('')
+
 </script>
 
 <template>
     <h1 class="green">{{ msg }}</h1>
+
     <h3>Enter your email below</h3>
 
-  <input type="email" placeholder="Email" />
+  <input type="email" placeholder="Email" v-model="email" />
   <button @click="submitEmail">Submit</button>
 
 
