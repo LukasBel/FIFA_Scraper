@@ -1,32 +1,35 @@
 <script setup>
-import {ref} from "vue";
+import { ref } from "vue";
+import axios from "axios";
 
 defineProps({
   msg: {
     type: String,
     required: true
   }
-})
+});
 
-const submitEmail = () => {
-  console.log(email.value)
-}
+const submitEmail = async () => {
+  try {
+    await axios.post("http://localhost:8080/FIFA/create", { email: email.value });
+    console.log("Email submitted successfully!");
+  } catch (error) {
+    console.error("Failed to submit email:", error);
+  }
+};
 
-const email = ref('')
-
+const email = ref("");
 </script>
 
 <template>
-    <h1 class="green">{{ msg }}</h1>
+  <h1 class="green">{{ msg }}</h1>
 
-    <h3>Enter your email below</h3>
+  <h3>Enter your email below</h3>
 
   <input type="email" placeholder="Email" v-model="email" />
   <button @click="submitEmail">Submit</button>
 
-
   <p>By submitting your email, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
-
 </template>
 
 <style scoped>
