@@ -1,6 +1,6 @@
 <template>
   <div class="item">
-    <i>
+    <i style="color: rgba(19,110,182,0.84);">
       <slot name="icon"></slot>
     </i>
     <div class="details">
@@ -31,7 +31,8 @@ i {
   width: 32px;
   height: 32px;
 
-  color: var(--color-text);
+  /* Set color to blue */
+  color: blue;
 }
 
 h3 {
