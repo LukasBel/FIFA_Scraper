@@ -130,6 +130,6 @@ header {
 }
 
 .blue-link {
-  color: rgba(19, 110, 182, 0.87);
+  color: rgba(30, 138, 222, 0.87);
 }
 </style>

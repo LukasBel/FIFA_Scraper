@@ -41,10 +41,5 @@ import SupportIcon from './icons/IconSupport.vue'
   </WelcomeItem>
 </template>
 
-<style scoped>
-.blue-link {
-  color: rgba(19,110,182,0.84);
-}
-</style>
 
 
