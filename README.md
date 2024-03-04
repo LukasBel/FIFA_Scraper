@@ -1,8 +1,6 @@
 # 2026 FIFA World Cup Ticket WebScraper
 
-<div style="border: 5px solid #9d9797; display: inline-block;">
-  <img alt="FIFA Ticket WebScraper" src="C:\Users\magda\OneDrive\Pictures\FifaWebScraper.PNG" style="display: block; width: 100%; height: auto;">
-</div>
+![FifaWebScraper](https://github.com/LukasBel/FIFA_Scraper/assets/45898249/6b376b61-0665-47e0-8120-87768822603e)
 
 This project is a FIFA Ticket WebScraper designed to monitor the status of tickets and notify users via email when tickets 
 go on sale or when there are updates regarding ticket availability. The project consists of a frontend built with **Vue.js** 
