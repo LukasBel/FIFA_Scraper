@@ -44,7 +44,15 @@
       Though the FIFA website has an official newsletter, I wanted to create my own application with less traffic
       and more reliability.
     </WelcomeItem>
+
+
   </main>
+
+  <footer>
+    <p>&copy; 2024 Mickdel Productions</p>
+  </footer>
+
+
 </template>
 
 <script setup>
@@ -54,7 +62,6 @@ import WelcomeItem from "@/components/WelcomeItem.vue";
 import DocumentationIcon from "@/components/icons/IconDocumentation.vue";
 import CommunityIcon from "@/components/icons/IconCommunity.vue";
 import SupportIcon from "@/components/icons/IconSupport.vue";
-
 
 const submitEmail = async () => {
   try {
